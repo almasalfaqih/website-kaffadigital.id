@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kaffa Digital - Pusat produk digital berkualitas dengan harga terjangkau. Dapatkan e-book, kursus online, template website, dan berbagai tools digital untuk bisnis Anda.">
+    <link rel="icon" href="gambar/logo/site-tabbrowser-logo-kaffadigital.webp" type="image/png">
+    <title>Kaffa Digital - Pusatnya Produk Digital Berkualitas</title>
+    
+    <!-- Preload important resources -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    
+    <!-- External Resources -->
+    <noscript>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    </noscript>
+    
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="https://kaffadigital.co-id.id">
+                <img src="gambar/logo/site-logo-kaffadigital-biru-1080x300.webp" alt="Kaffa Digital Logo" class="img-fluid img-responsive" loading="lazy">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="https://kaffadigital.co-id.id">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="produkDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Produk Digital
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="produkDropdown">
+                            <li>
+                                <a class="dropdown-item free-item" href="#produk-gratis">
+                                    <i class="fas fa-gift"></i> Produk Gratis
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item premium-item" href="#produk-premium">
+                                    <i class="fas fa-crown"></i> Produk Premium
+                                </a>
+                            </li>
+                        </ul>
+                    </li>              
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gabung-channel">Gabung Channel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://kaffadigital.co-id.id/#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak-saya">Kontak</a>
+                    </li>                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-2 order-lg-1">
+                    <h1>🚀 Mau Cuan dari Internet? Mulai di Sini!</h1>
+                    <p>💡 Temukan produk digital & kursus online terbaik buat upgrade skill, boost penghasilan, dan jadi next-level digitalpreneur!</p>
+                    <a href="#produk-gratis" class="btn btn-lhtprdk">
+                        <span class="icon-circle">
+                            <i class="fas fa-arrow-right"></i>
+                        </span> Lihat Produk
+                    </a>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2">
+                    <img src="gambar/hero-section/RMBG-A-faceless-man-working-in-internet-marketing-BING-3.webp" alt="Ilustrasi Kesuksesan Digital" class="img-fluid img-responsive" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jangan Sampai Salah Langkah Section -->
+    <section class="jangan-sampai-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2>Jangan Sampai Salah Langkah! Waktu Anda Terlalu Berharga</h2>
+                    <p class="intro-text">Banyak yang ingin cuan dari dunia digital, tapi…</p>
+                    
+                    <ul class="list-unstyled">
+                        <li>
+                            <strong>❌ Bingung harus mulai dari mana</strong>
+                            <small>Terlalu banyak pilihan, tapi nggak tahu langkah pertama yang benar.</small>
+                        </li>
+                        <li>
+                            <strong>❌ Kebanyakan informasi, malah makin pusing</strong>
+                            <small>Belajar sana-sini, tapi tetap stuck di tempat.</small>
+                        </li>
+                        <li>
+                            <strong>❌ Takut habis waktu & uang buat ikut kelas online yang nggak efektif</strong>
+                            <small>Udah bayar mahal, tapi hasilnya nol besar.</small>
+                        </li>
+                        <li>
+                            <strong>❌ Sudah coba banyak strategi, tapi nggak ada yang works</strong>
+                            <small>Selalu gagal di eksekusi atau nggak tahu harus gimana.</small>
+                        </li>
+                        <li>
+                            <strong>❌ Terlalu banyak belajar teori tanpa praktek yang jelas (sebatas konsumsi otak)</strong>
+                            <small>Paham konsep, tapi masih bingung gimana cara jalaninnya.</small>
+                        </li>
+                    </ul>
+                    
+                    <div class="custom-box">
+                        <p class="fw-bold mb-2">🚫 STOP! Sudahi Kebingungan & Trial & Error yang Melelahkan!</p>
+                        <p class="mb-0">Waktunya belajar dengan cara yang benar & langsung hasilkan uang!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mengapa Kaffa Digital Section -->
+    <section class="kenapa-kaffa-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9 text-center">
+                    <h2 class="mb-5">Mengapa Memilih Produk Digital di Kaffa Digital?</h2>
+                    
+                    <div class="row g-4">
+                        <!-- Card 1 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 kenapa-card">
+                                <div class="card-body text-center">
+                                    <div class="icon-wrapper mb-3">
+                                        <i class="fas fa-user-tie fa-2x"></i>
+                                    </div>
+                                    <h5 class="card-title">Praktisi Berpengalaman</h5>
+                                    <p class="card-text">Ilmu dari mentor yang sudah terbukti sukses di bidangnya.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 2 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 kenapa-card">
+                                <div class="card-body text-center">
+                                    <div class="icon-wrapper mb-3">
+                                        <i class="fas fa-tags fa-2x"></i>
+                                    </div>
+                                    <h5 class="card-title">Produk Siap Jual</h5>
+                                    <p class="card-text">Tersedia produk digital siap jual, Anda bisa langsung menghasilkan.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 3 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 kenapa-card">
+                                <div class="card-body text-center">
+                                    <div class="icon-wrapper mb-3">
+                                        <i class="fas fa-seedling fa-2x"></i>
+                                    </div>
+                                    <h5 class="card-title">Newbie Friendly</h5>
+                                    <p class="card-text">Materi mudah dipahami, cocok untuk pemula sekalipun.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 4 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 kenapa-card">
+                                <div class="card-body text-center">
+                                    <div class="icon-wrapper mb-3">
+                                        <i class="fas fa-chart-line fa-2x"></i>
+                                    </div>
+                                    <h5 class="card-title">Hasil Nyata</h5>
+                                    <p class="card-text">Bisa dipraktikkan & terbukti memberikan hasil nyata.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 5 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 kenapa-card">
+                                <div class="card-body text-center">
+                                    <div class="icon-wrapper mb-3">
+                                        <i class="fas fa-sync-alt fa-2x"></i>
+                                    </div>
+                                    <h5 class="card-title">Up-to-Date</h5>
+                                    <p class="card-text">Materi selalu diperbarui sesuai tren terbaru.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 6 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 kenapa-card">
+                                <div class="card-body text-center">
+                                    <div class="icon-wrapper mb-3">
+                                        <i class="fas fa-rocket fa-2x"></i>
+                                    </div>
+                                    <h5 class="card-title">Pembelajaran Efektif</h5>
+                                    <p class="card-text">Belajar efektif = lebih cepat cuan!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-5">
+                        <a href="#produk-gratis" class="btn btn-ckprdkdnkrssskrng">
+                            <span class="icon-circle">
+                                <i class="fas fa-arrow-right"></i>
+                            </span> Cek Produk & Kursus Sekarang
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Produk Gratis Kaffa Digital Section -->
+    <section id="produk-gratis" class="produk-kursus-section" style="background-color: var(--white);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="mb-3">Produk & Kursus Gratis Terbaik Kaffa Digital</h2>
+                    <p class="lead">Dapatkan produk digital gratis berkualitas untuk memulai kesuksesan digital Anda.</p>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <!-- Product Cards -->
+                <!-- Card 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-img-container">
+                            <img src="gambar/produk-gratis/[1]-ebook-10-juta-pertama-dari-affiliate-marketing.webp" class="card-img-top img-responsive" alt="E-Book 10 Juta Pertama dari Affiliate Marketing" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">E-Book 10 Juta Pertama dari Affiliate Marketing</h5>
+                            <p class="free-label">Gratis</p>
+                            <p class="card-text">Pelajari strategi terbukti untuk raih 10 juta pertama dari affiliate produk digital tanpa perlu modal besar.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0">
+                            <div class="d-grid gap-2">
+                                <a href="https://kaffadigital.co-id.id/ebook-10juta-pertama-dari-affiliate" class="btn btn-lhtdtl">
+                                    <span class="icon-circle">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </span> Lihat Detail
+                                </a>
+                                <a href="https://kaffadigital.co-id.id/ebook-10juta-pertama-dari-affiliate" class="btn btn-dptknskrng">
+                                    <i class="fas fa-shopping-cart me-2"></i> Dapatkan Sekarang
+                                </a>
+                                <p class="license-info">Lisensi: Personal Use</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-img-container">
+                            <img src="gambar/produk-gratis/[1]-mini-course-jago-affiliate-marketing.webp" class="card-img-top img-responsive" alt="Mini Course Jago Affiliate Marketing" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Mini Course Jago Affiliate Marketing</h5>
+                            <p class="free-label">Gratis</p>
+                            <p class="card-text">Belajar cara simpel dan efektif sukses di affiliate marketing tanpa modal besar.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0">
+                            <div class="d-grid gap-2">
+                                <a href="https://kaffadigital.co-id.id/minicourse-jago-affiliate" class="btn btn-lhtdtl">
+                                    <span class="icon-circle">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </span> Lihat Detail
+                                </a>
+                                <a href="https://kaffadigital.co-id.id/minicourse-jago-affiliate" class="btn btn-dptknskrng">
+                                    <i class="fas fa-shopping-cart me-2"></i> Dapatkan Sekarang
+                                </a>
+                                <p class="license-info">Lisensi: Personal Use</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-img-container">
+                            <img src="gambar/produk-gratis/[1]-mini-course-belajar-meta-ads.webp" class="card-img-top img-responsive" alt="Mini Course Belajar Meta Ads" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Mini Course Belajar Meta Ads</h5>
+                            <p class="free-label">Gratis</p>
+                            <p class="card-text">Kuasai Meta Ads dengan strategi efektif untuk iklan hemat biaya, tepat sasaran, dan meningkatkan konversi.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0">
+                            <div class="d-grid gap-2">
+                                <a href="https://kaffadigital.co-id.id/minicourse-meta-ads" class="btn btn-lhtdtl">
+                                    <span class="icon-circle">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </span> Lihat Detail
+                                </a>
+                                <a href="https://kaffadigital.co-id.id/minicourse-meta-ads" class="btn btn-dptknskrng">
+                                    <i class="fas fa-shopping-cart me-2"></i> Dapatkan Sekarang
+                                </a>
+                                <p class="license-info">Lisensi: Personal Use</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 4 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-img-container">
+                            <img src="gambar/produk-gratis/[1]-webinar-memulai-affiliate-marketing-untuk-pemula.webp" class="card-img-top img-responsive" alt="Webinar Memulai Affiliate Marketing Untuk Pemula" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Webinar Memulai Affiliate Marketing Untuk Pemula</h5>
+                            <p class="free-label">Gratis</p>
+                            <p class="card-text">Bongkar formula sukses affiliate. Live Zoom interaktif, strategi terbukti, dan bonus eksklusif untuk hasil maksimal.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0">
+                            <div class="d-grid gap-2">
+                                <a href="https://kaffadigital.co-id.id/webinar-affiliate-pemula" class="btn btn-lhtdtl">
+                                    <span class="icon-circle">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </span> Lihat Detail
+                                </a>
+                                <a href="https://kaffadigital.co-id.id/webinar-affiliate-pemula" class="btn btn-dptknskrng">
+                                    <i class="fas fa-shopping-cart me-2"></i> Dapatkan Sekarang
+                                </a>
+                                <p class="license-info">Lisensi: Personal Use</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 5 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-img-container">
+                            <img src="gambar/produk-gratis/[1]-video-series-jago-affiliate-marketing.webp" class="card-img-top img-responsive" alt="Video Series Jago Affiliate Marketing" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Video Series Jago Affiliate Marketing</h5>
+                            <p class="free-label">Gratis</p>
+                            <p class="card-text">Pahami langkah demi langkah affiliate marketing. Dapatkan video series dan bonus eksklusif sekarang.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0">
+                            <div class="d-grid gap-2">
+                                <a href="https://kaffadigital.co-id.id/videoseries-jago-affiliate" class="btn btn-lhtdtl">
+                                    <span class="icon-circle">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </span> Lihat Detail
+                                </a>
+                                <a href="https://kaffadigital.co-id.id/videoseries-jago-affiliate" class="btn btn-dptknskrng">
+                                    <i class="fas fa-shopping-cart me-2"></i> Dapatkan Sekarang
+                                </a>
+                                <p class="license-info">Lisensi: Personal Use</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 6 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-img-container">
+                            <img src="gambar/produk-gratis/[1]-komunitas-belajar-affiliate-marketing.webp" class="card-img-top img-responsive" alt="Komunitas Belajar Affiliate Marketing" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Komunitas Belajar Affiliate Marketing</h5>
+                            <p class="free-label">Gratis</p>
+                            <p class="card-text">Mulai perjalanan affiliate marketingmu bersama komunitas. Belajar, berbagi strategi, dan raih sukses bersama.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0">
+                            <div class="d-grid gap-2">
+                                <a href="https://kaffadigital.co-id.id/komunitas-belajar-affiliate" class="btn btn-lhtdtl">
+                                    <span class="icon-circle">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </span> Lihat Detail
+                                </a>
+                                <a href="https://kaffadigital.co-id.id/komunitas-belajar-affiliate" class="btn btn-dptknskrng">
+                                    <i class="fas fa-shopping-cart me-2"></i> Dapatkan Sekarang
+                                </a>
+                                <p class="license-info">Lisensi: Personal Use</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produk & Kursus Premium Terbaik Section -->
+    <section id="produk-premium" class="produk-kursus-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="mb-3">Produk & Kursus Premium Terbaik Kaffa Digital</h2>
+                    <p class="lead">Temukan produk digital dan kursus online terbaik untuk meningkatkan skill dan penghasilan Anda.</p>
+                </div>
+            </div>
+            
+            <div class="row mt-4">
+                <!-- Product Cards -->
+                <!-- Card 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-img-container">
+                            <img src="gambar/produk-premium/[1]-ebook-banjir-order-tanpa-mengandalkan-followers-dengan-meta-ads.webp" class="card-img-top img-responsive" alt="E-Book Banjir Order Tanpa Mengandalkan Followers dengan Meta Ad" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">E-Book Banjir Order Tanpa Mengandalkan Followers dengan Meta Ads</h5>
+                            <p class="card-price"><span class="original-price">Rp 249.000</span> Rp 99.000</p>
+                            <p class="card-text">Order mengalir tanpa harus membangun followers. Kuasai Meta Ads untuk menjangkau pembeli potensial & maksimalkan omset.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0">
+                            <div class="d-grid gap-2">
+                                <a href="https://kaffadigital.co-id.id/ebook-banjir-order-tanpa-andalkan-followers" class="btn btn-lhtdtl">
+                                    <span class="icon-circle">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </span> Lihat Detail
+                                </a>
+                                <a href="https://kaffadigital.co-id.id/checkout-ebook-banjir-order-tanpa-andalkan-followers" class="btn btn-dptknskrng">
+                                    <i class="fas fa-shopping-cart me-2"></i> Dapatkan Sekarang
+                                </a>
+                                <p class="license-info">Lisensi: Personal Use</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-img-container">
+                            <img src="gambar/produk-premium/[1]-ebook-melejitkan-bisnis-digital-dengan-email-marketing.webp" class="card-img-top img-responsive" alt="E-Book Melejitkan Bisnis Digital dengan Email Marketing" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">E-Book Melejitkan Bisnis Digital dengan Email Marketing</h5>
+                            <p class="card-price"><span class="original-price">Rp 249.000</span> Rp 99.000</p>
+                            <p class="card-text">Maksimalkan bisnis digital dengan email. Panduan lengkap untuk mengubah email menjadi mesin penjualan otomatis.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0">
+                            <div class="d-grid gap-2">
+                                <a href="https://kaffadigital.co-id.id/ebook-lejitkan-bisnis-digital-dengan-email-marketing" class="btn btn-lhtdtl">
+                                    <span class="icon-circle">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </span> Lihat Detail
+                                </a>
+                                <a href="https://kaffadigital.co-id.id/checkout-ebook-lejitkan-bisnis-digital-dengan-email-marketing" class="btn btn-dptknskrng">
+                                    <i class="fas fa-shopping-cart me-2"></i> Dapatkan Sekarang
+                                </a>
+                                <p class="license-info">Lisensi: Personal Use</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-img-container">
+                            <img src="gambar/produk-premium/[1]-rekaman-bootcamp-digital-marketing.webp" class="card-img-top img-responsive" alt="Rekaman Bootcamp Digital Marketing" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Rekaman Bootcamp Digital Marketing</h5>
+                            <p class="card-price"><span class="original-price">Rp 299.000</span> Rp 99.000</p>
+                            <p class="card-text">Rekaman Bootcamp Digital Markeing full daging. Praktik langsung cara riset market, iklan meta ads, buat landing page, dan optimasi email marketing.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0">
+                            <div class="d-grid gap-2">
+                                <a href="https://kaffadigital.co-id.id/rekaman-bootcamp-digital-marketing" class="btn btn-lhtdtl">
+                                    <span class="icon-circle">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </span> Lihat Detail
+                                </a>
+                                <a href="https://kaffadigital.co-id.id/checkout-rekaman-bootcamp-digital-marketing" class="btn btn-dptknskrng">
+                                    <i class="fas fa-shopping-cart me-2"></i> Dapatkan Sekarang
+                                </a>
+                                <p class="license-info">Lisensi: Personal Use</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 4 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-img-container">
+                            <img src="gambar/produk-premium/[1]-kelas-organic-traffic.webp" class="card-img-top img-responsive" alt="E-Course Kelas Organic Traffic" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Kelas Organic Traffic</h5>
+                            <p class="card-price"><span class="original-price">Rp 497.000</span> Rp 149.000</p>
+                            <p class="card-text">Hasilkan lebih banyak penjualan dengan strategi organic traffic. Cocok untuk pemilik bisnis dan marketer yang ingin traffic berkelanjutan tanpa biaya iklan.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0">
+                            <div class="d-grid gap-2">
+                                <a href="https://kaffadigital.co-id.id/kelas-organic-traffic" class="btn btn-lhtdtl">
+                                    <span class="icon-circle">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </span> Lihat Detail
+                                </a>
+                                <a href="https://kaffadigital.co-id.id/checkout-kelas-organic-traffic" class="btn btn-dptknskrng">
+                                    <i class="fas fa-shopping-cart me-2"></i> Dapatkan Sekarang
+                                </a>
+                                <p class="license-info">Lisensi: Personal Use</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 5 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-img-container">
+                            <img src="gambar/produk-premium/[1]-ecourse-landing-page-mastery.webp" class="card-img-top img-responsive" alt="E-Course Landing Page Mastery" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">E-Course Landing Page Mastery</h5>
+                            <p class="card-price"><span class="original-price">Rp 299.000</span> Rp 199.000</p>
+                            <p class="card-text">Pelajari cara membuat landing page profesional yang menarik dan mengonversi tinggi tanpa ribet, cocok untuk pemula.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0">
+                            <div class="d-grid gap-2">
+                                <a href="https://kaffadigital.co-id.id/ecourse-landing-page-mastery" class="btn btn-lhtdtl">
+                                    <span class="icon-circle">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </span> Lihat Detail
+                                </a>
+                                <a href="https://kaffadigital.co-id.id/checkout-ecourse-landing-page-mastery" class="btn btn-dptknskrng">
+                                    <i class="fas fa-shopping-cart me-2"></i> Dapatkan Sekarang
+                                </a>
+                                <p class="license-info">Lisensi: Personal Use</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 6 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-img-container">
+                            <img src="gambar/produk-premium/[1]-ecourse-email-marketing-mastery.webp" class="card-img-top img-responsive" alt="E-Course Email Marketing Mastery" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">E-Course Email Marketing Mastery</h5>
+                            <p class="card-price"><span class="original-price">Rp 497.000</span> Rp 199.000</p>
+                            <p class="card-text">Pelajari strategi email marketing yang efektif untuk meningkatkan penjualan, menjaga loyalitas pelanggan, dan buat bisnis berjalan otomatis.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0">
+                            <div class="d-grid gap-2">
+                                <a href="https://kaffadigital.co-id.id/ecourse-email-marketing-mastery" class="btn btn-lhtdtl">
+                                    <span class="icon-circle">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </span> Lihat Detail
+                                </a>
+                                <a href="https://kaffadigital.co-id.id/checkout-ecourse-email-marketing-mastery" class="btn btn-dptknskrng">
+                                    <i class="fas fa-shopping-cart me-2"></i> Dapatkan Sekarang
+                                </a>
+                                <p class="license-info">Lisensi: Personal Use</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 7 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-img-container">
+                            <img src="gambar/produk-premium/[1]-program-affiliate-gatara-academy.webp" class="card-img-top img-responsive" alt="Program Affiliasi Gatara Academy" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Program Affiliasi Gatara Academy</h5>
+                            <p class="card-price"><span class="original-price">Rp 1.000.000</span> Rp 299.000</p>
+                            <p class="card-text">Jual semua produk digital di Gatara Academy, dapatkan komisi 50% per penjualan, plus bimbingan dan dukungan dari tim.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0">
+                            <div class="d-grid gap-2">
+                                <a href="https://kaffadigital.co-id.id/program-affiliasi-gatara-academy" class="btn btn-lhtdtl">
+                                    <span class="icon-circle">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </span> Lihat Detail
+                                </a>
+                                <a href="https://kaffadigital.co-id.id/checkout-program-affiliasi-gatara-academy" class="btn btn-dptknskrng">
+                                    <i class="fas fa-shopping-cart me-2"></i> Dapatkan Sekarang
+                                </a>
+                                <p class="license-info">Lisensi: Personal Use</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 8 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-img-container">
+                            <img src="gambar/produk-premium/[1]-ecourse-community-building-mastery.webp" class="card-img-top img-responsive" alt="E-Course Community Building Mastery" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">E-Course Community Building Mastery</h5>
+                            <p class="card-price"><span class="original-price">Rp 499.000</span> Rp 349.000</p>
+                            <p class="card-text">Kuasai strategi membangun komunitas yang berisi prospek potensial dan tingkatkan pertumbuhan bisnis secara organik.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0">
+                            <div class="d-grid gap-2">
+                                <a href="https://kaffadigital.co-id.id/ecourse-community-building-mastery" class="btn btn-lhtdtl">
+                                    <span class="icon-circle">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </span> Lihat Detail
+                                </a>
+                                <a href="https://kaffadigital.co-id.id/checkout-ecourse-community-building-mastery" class="btn btn-dptknskrng">
+                                    <i class="fas fa-shopping-cart me-2"></i> Dapatkan Sekarang
+                                </a>
+                                <p class="license-info">Lisensi: Personal Use</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 9 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-img-container">
+                            <img src="gambar/produk-premium/[1]-ecourse-meta-ads-for-produk-fisik.webp" class="card-img-top img-responsive" alt="E-Course Meta Ads For Produk Fisik" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">E-Course Meta Ads For Produk Fisik</h5>
+                            <p class="card-price"><span class="original-price">Rp 1.000.000</span> Rp 497.000</p>
+                            <p class="card-text">Panduan lengkap dan praktis belajar Meta Ads untuk pemilik bisnis produk fisik. Pelajari langkah demi langkah tanpa buang-buang budget iklan.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0">
+                            <div class="d-grid gap-2">
+                                <a href="https://kaffadigital.co-id.id/ecourse-meta-ads-for-produk-fisik" class="btn btn-lhtdtl">
+                                    <span class="icon-circle">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </span> Lihat Detail
+                                </a>
+                                <a href="https://kaffadigital.co-id.id/checkout-ecourse-meta-ads-for-produk-fisik" class="btn btn-dptknskrng">
+                                    <i class="fas fa-shopping-cart me-2"></i> Dapatkan Sekarang
+                                </a>
+                                <p class="license-info">Lisensi: Personal Use</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Section Gabung Telegram & Dapatkan Update -->
+    <section id="gabung-channel" class="telegram-section" style="background-color: var(--primary-color); color: var(--white); padding: 4rem 0;">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Kolom Kiri - Konten Ajakan -->
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-paper-plane fa-2x me-3" style="color: var(--white);"></i>
+                        <h2 class="mb-0">Gabung Channel Kami</h2>
+                    </div>
+                    <p class="fs-5 mb-4">Dapatkan update terbaru seputar:</p>
+                    <ul class="fa-ul" style="font-size: 1.1rem;">
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check" style="color: white;"></i></span>Strategi internet marketing terbaru</li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check" style="color: white;"></i></span>Cara menghasilkan uang dari dunia digital</li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check" style="color: white;"></i></span>Informasi produk & promo eksklusif Kaffa Digital</li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check" style="color: white;"></i></span>Tips & trik langsung dari praktisi</li>
+                    </ul>
+
+                    <div class="mt-4 mb-3">
+                        <a href="https://t.me/kaffadigital" class="btn btn-telegram" style="
+                            background-color: #0088cc;
+                            color: white;
+                            border-radius: 50px;
+                            padding: 0.75rem 1.5rem;
+                            box-shadow: 
+                                0 4px 0 0 #006b9e,
+                                0 6px 10px rgba(0, 0, 0, 0.08);
+                            transition: all 0.2s ease;
+                            position: relative;
+                            top: 0;
+                        ">
+                            <i class="fab fa-telegram fa-lg me-2" style="vertical-align: middle;"></i> Gabung Channel Telegram
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Kolom Kanan - Form Email -->
+                <div class="col-lg-6">
+                    <div class="card shadow" style="border-radius: 20px; border: none;">
+                        <div class="card-body p-4">
+                            <h3 class="card-title mb-3" style="color: var(--primary-color);">
+                                <i class="fas fa-envelope me-2"></i> Dapatkan Update via Email
+                            </h3>
+                            <p class="card-text mb-4" style="color: var(--text-light);">
+                                Masukkan email Anda untuk mendapatkan informasi terbaru dan materi eksklusif langsung ke inbox!
+                            </p>
+                            
+                            <form>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control py-3" placeholder="Alamat Email Anda" style="border-radius: 10px; border: 1px solid #ddd; font-weight: 300; transition: all 0.3s ease;" onblur="this.style.borderColor='#ddd'; this.style.borderWidth='0.5px'">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control py-3" placeholder="Nama Lengkap" style="border-radius: 10px; border: 1px solid #ddd; font-weight: 300; transition: all 0.3s ease;" onblur="this.style.borderColor='#ddd'; this.style.borderWidth='0.5px'">
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100 py-3" style="background-color: var(--secondary-color); border: none; border-radius: 10px; font-weight: 600; box-shadow: 0 4px 15px rgba(29, 195, 91, 0.3); transition: all 0.3s ease;">
+                                    Daftar Sekarang
+                                </button>
+                                <p class="small mt-3" style="color: var(--text-light);">
+                                    Kami menghargai privasi Anda. Email hanya digunakan untuk mengirim informasi bermanfaat.
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Section Kontak -->
+    <section id="kontak-saya" class="contact-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h3 class="mb-4">Butuh Bantuan?<br>Hubungi saya melalui kontak di bawah</h3>
+
+                    <!-- Foto Profil -->
+                    <div class="d-flex justify-content-center mb-4">
+                        <img src="gambar/profil/foto-profil-instagram-almas-juli-2023.webp" 
+                             alt="Almas Alfaqih" 
+                             class="profile-circle" 
+                             loading="lazy">
+                    </div>
+
+                    <!-- Nama -->
+                    <p class="mb-1" style="font-size: 1.15rem;">Almas Alfaqih</p>
+                    <p class="text-muted mb-4" style="font-size: 0.9rem;">Founder Kaffa Digital</p>
+
+                    <!-- Tombol WhatsApp -->
+                    <a href="https://wa.me/6285792071600" class="btn btn-wa mb-5">
+                        <i class="fab fa-whatsapp fa-lg me-2"></i> Chat WA
+                    </a>
+
+                    <!-- Pesan Penutup -->
+                    <div class="mt-4 pt-3 border-top">
+                        <p class="mb-1" style="font-size: 1.1rem;">Sukses selalu untuk Anda</p>
+                        <p class="signature mb-0" style="font-size: 1.5rem;">Barakallahu fikum!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Kolom 1: Logo & Tagline -->
+                <div class="col-md-4 mb-4">
+                    <img src="gambar/logo/site-logo-kaffadigital-putih-1080x300.webp" alt="Kaffa Digital" class="footer-logo" loading="lazy">
+                    <p style="font-size: 0.8rem;">Pusatnya Produk Digital Berkualitas</p>
+                </div>
+
+                <!-- Kolom 2: Navigasi -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-3">Navigasi Cepat</h5>
+                    <div class="footer-links">
+                        <a href="https://kaffadigital.co-id.id">Home</a>
+                        <a href="#produk-premium">Produk Premium</a>
+                        <a href="#produk-gratis">Produk Gratis</a>
+                        <a href="#gabung-channel">Gabung Channel</a>
+                        <a href="https://blog.kaffadigital.co-id.id">Blog</a>
+                        <a href="#kontak-saya">Kontak</a>                        
+                    </div>
+                </div>
+
+                <!-- Kolom 3: Sosial Media -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-3">Sosial Media</h5>
+                    <a href="https://wa.me/6285792071600" class="social-icon" style="text-decoration: none;">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://instagram.com/kaffadigital" class="social-icon" style="text-decoration: none;">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/kaffadigital" class="social-icon" style="text-decoration: none;">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://t.me/kaffadigital" class="social-icon" style="text-decoration: none;">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="row">
+                <div class="col-12 text-center copyright">
+                    &copy; <span id="year"></span> Kaffa Digital Project. All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS File -->
+    <script src="script.js"></script>
+</body>
+</html>

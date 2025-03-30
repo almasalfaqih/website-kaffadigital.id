@@ -1,0 +1,646 @@
+:root {
+    --primary-color: #006dc2;
+    --secondary-color: #1dc35b;
+    --accent-color: #FFD700;
+    --text-color: #333;
+    --text-light: #666;
+    --text-lighter: #888;
+    --white: #fff;
+    --light-bg: #f8f9fa;
+    --wa-green: #25D366;
+}
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+    font-weight: 700; 
+    line-height: 1.3; 
+}
+
+p { margin-bottom: 1rem; }
+        section { padding: 4rem 0; }
+        img { 
+            max-width: 100%; 
+            height: auto; 
+            display: block;
+        }
+
+        /* Navbar */
+        .navbar {
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            background-color: var(--white) !important;
+        }
+        
+        .navbar-brand img {
+            height: 40px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link {
+            font-size: 1rem;
+            font-weight: 500;
+            position: relative;
+            padding: 0.5rem 1rem !important;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: var(--secondary-color);
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: calc(100% - 2rem);
+        }
+
+        /* Dropdown menu styling */
+        .dropdown-menu {
+            border: none;
+            border-radius: 12px;
+            padding: 0.5rem 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            margin-top: 8px;
+            animation: fadeIn 0.2s ease-out;
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .dropdown-item {
+            padding: 0.75rem 1.5rem;
+            font-weight: 500;
+            color: var(--text-color);
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            position: relative;
+            margin: 0 0.5rem;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+        }
+
+        .dropdown-item:not(:last-child) {
+            margin-bottom: 0.25rem;
+        }
+
+        .dropdown-item:hover {
+            background-color: rgba(29, 195, 91, 0.1);
+            color: var(--secondary-color);
+            transform: translateX(5px);
+        }
+
+        .dropdown-item:hover::before {
+            content: '';
+            position: absolute;
+            left: -5px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 3px;
+            height: 60%;
+            background-color: var(--secondary-color);
+            border-radius: 3px;
+            animation: lineGrow 0.3s ease-out;
+        }
+
+        @keyframes lineGrow {
+            from { height: 0; }
+            to { height: 60%; }
+        }
+
+        .dropdown-item i {
+            width: 20px;
+            margin-right: 10px;
+            text-align: center;
+            color: var(--secondary-color);
+            transition: all 0.3s ease;
+        }
+
+        .dropdown-item:hover i {
+            transform: scale(1.1);
+        }
+
+        .dropdown-item.free-item:hover,
+        .dropdown-item.premium-item:hover {
+            color: #25D366;
+        }
+        
+        .nav-link.dropdown-toggle::after {
+            display: none !important;
+        }
+        
+        .nav-item.dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        
+        .nav-link:hover { 
+            color: var(--secondary-color) !important; 
+        }
+        
+        .navbar-toggler { 
+            border: none; 
+            padding: 0.5rem; 
+        }
+        
+        .navbar-toggler:focus { 
+            box-shadow: none; 
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 5rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-section h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+        
+        .hero-section p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .hero-section img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 10px;
+            margin: 0 auto;
+        }
+        
+        /* Jangan Sampai Salah Langkah Section */
+        .jangan-sampai-section { 
+            background-color: var(--white); 
+        }
+        
+        .jangan-sampai-section h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--text-color);
+        }
+        
+        .jangan-sampai-section ul {
+            font-size: 1.1rem;
+            padding-left: 1rem;
+        }
+        
+        .jangan-sampai-section li {
+            margin-bottom: 1.5rem;
+            padding-left: 1rem;
+            border-left: 3px solid var(--secondary-color);
+        }
+        
+        .jangan-sampai-section strong { 
+            color: var(--primary-color); 
+        }
+        
+        .jangan-sampai-section small {
+            display: block;
+            font-size: 1rem;
+            color: var(--text-light);
+            margin-top: 0.5rem;
+        }
+        
+        .intro-text {
+            font-size: 1.1rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--text-light);
+        }
+
+        /* Custom Box Kuning */
+        .custom-box {
+            background-color: var(--accent-color);
+            border-radius: 25px;
+            padding: 1.5rem;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            margin: 2rem auto;
+            color: var(--text-color);
+            max-width: 85%;
+            text-align: center;
+        }
+        
+        .custom-box p { margin-bottom: 0; }
+        .custom-box .fw-bold { 
+            font-size: 1.1rem; 
+            color: var(--text-color); 
+        }
+
+        /* Kenapa Kaffa Digital Section */
+        .kenapa-kaffa-section {
+            background-color: var(--primary-color);
+            color: var(--white);
+            position: relative;
+        }
+        
+        .kenapa-kaffa-section h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .kenapa-card {
+            border: none;
+            border-radius: 15px;
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            transition: all 0.3s ease;
+            color: var(--white);
+        }
+
+        .kenapa-card:hover {
+            transform: translateY(-2px);
+            background-color: rgba(255, 255, 255, 0.12);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .icon-wrapper {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            color: var(--white);
+        }
+
+        .kenapa-card .card-title {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: var(--white);
+        }
+
+        .kenapa-card .card-text {
+            font-size: 0.975rem;
+            opacity: 0.95;
+            color: white;
+        }
+
+        /* Produk & Kursus Section */
+        .produk-kursus-section { 
+            background-color: var(--light-bg); 
+        }
+        
+        .produk-kursus-section h2 {
+            font-size: 2rem;
+            color: var(--text-color);
+            margin-bottom: 1rem;
+        }
+        
+        .produk-kursus-section .lead {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 3rem;
+        }
+        
+        .card {
+            border: none;
+            border-radius: 30px;
+            transition: all 0.6s ease;
+            height: 100%;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            padding-bottom: 1rem;
+        }
+        
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .card-img-container { 
+            aspect-ratio: 1/1; 
+            overflow: hidden; 
+        }
+        
+        .card-img-top {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        
+        .card-body {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .card-price {
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+        
+        .original-price {
+            text-decoration: line-through;
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-right: 0.5rem;
+        }
+        
+        .free-label {
+            font-weight: 600;
+            color: var(--wa-green);
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+        
+        .card-text {
+            font-size: 1rem;
+            color: var(--text-light);
+            margin-bottom: 1rem;
+            flex-grow: 1;
+        }
+        
+        .license-info {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            text-align: center;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Button Styles */
+        .btn {
+            font-weight: 600;
+            border-radius: 50px;
+            padding: 0.75rem 1.5rem;
+            transition: all 0.5s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+        
+        .btn-lhtprdk, 
+        .btn-ckprdkdnkrssskrng {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            border: none;
+            box-shadow: 0 4px 15px rgba(29, 195, 91, 0.3);
+        }
+        
+        .btn-lhtprdk:hover, 
+        .btn-ckprdkdnkrssskrng:hover {
+            background-color: #19a84f;
+            color: var(--white);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(29, 195, 91, 0.4);
+        }
+        
+        .btn-lhtdtl {
+            background-color: var(--primary-color);
+            color: var(--white);
+            border: none;
+            width: 100%;
+            margin-bottom: 0.35rem;
+        }
+        
+        .btn-lhtdtl:hover {
+            background-color: #005aa3;
+            color: var(--white);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 109, 194, 0.3);
+        }
+        
+        .btn-dptknskrng {
+            background-color: var(--white);
+            color: var(--secondary-color);
+            border: 2px solid var(--secondary-color);
+            width: 100%;
+        }
+        
+        .btn-dptknskrng:hover {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(29, 195, 91, 0.3);
+        }        
+              
+        .icon-circle {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            background-color: var(--white);
+            color: var(--secondary-color);
+            border-radius: 50%;
+            margin-right: 8px;
+            transition: all 0.3s ease;
+            font-size: 14px;
+            line-height: 1;
+        }
+
+        .icon-circle i {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .btn-lhtdtl .icon-circle { 
+            color: var(--primary-color); 
+        }    
+                
+        .btn-telegram:hover {
+            transform: translateY(-3px);
+            top: -2px;
+            box-shadow: 
+                0 6px 0 0 #006b9e,
+                0 8px 15px rgba(0, 0, 0, 0.1) !important;
+        }
+
+        .btn-telegram:active {
+            top: 1px;
+            box-shadow: 
+                0 2px 0 0 #006b9e,
+                0 3px 5px rgba(0, 0, 0, 0.15) !important;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(29, 195, 91, 0.4) !important;
+        }
+        
+        .contact-section {
+            background-color: #f8f9fa;
+            padding: 4rem 0;
+            position: relative;
+            z-index: 10;
+        }
+        .profile-circle {
+            width: 125px;
+            height: 125px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--secondary-color);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .btn-wa {
+            background-color: #25D366;
+            color: white;
+            border-radius: 50px;
+            padding: 12px 30px;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: none;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+        }
+        .btn-wa:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+            background-color: #20bd5a;
+        }
+        .signature {
+            font-family: 'Dancing Script', cursive;
+            color: #006dc2;
+        }
+        
+        .footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 3rem 0 1.5rem;
+        }
+        .footer-logo {
+            height: 65px;
+            margin-bottom: 0.2rem;
+        }
+        .footer-links a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            transition: all 0.3s;
+            display: block;
+            margin-bottom: 0.2rem;
+        }
+        .footer-links a:hover {
+            color: var(--accent-color);
+            transform: translateX(5px);
+        }
+        .social-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: white;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            transition: all 0.3s;
+            font-size: 1.2rem;
+            text-decoration: none !important;
+        }
+        
+        .social-icon i {
+            display: inline-block;
+        }
+        
+        .social-icon:hover {
+            background: var(--accent-color);
+            transform: translateY(-3px);
+            color: var(--primary-color);
+        }
+        .copyright {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 1.5rem;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Telegram Section Mobile Spacing */
+        @media (max-width: 768px) {
+            .telegram-section .col-lg-6:first-child {
+                margin-bottom: 2.5rem;
+            }
+            
+            .telegram-section .d-flex.align-items-center.mb-3 {
+                margin-bottom: 1.5rem !important;
+            }
+            
+            .telegram-section .btn-telegram {
+                margin-bottom: 2rem;
+            }
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 992px) {
+            section { padding: 3rem 0; }
+            
+            .hero-section h1,
+            .jangan-sampai-section h2,
+            .kenapa-kaffa-section h2,
+            .produk-kursus-section h2 { 
+                font-size: 1.8rem; 
+            }
+        }
+        
+        @media (max-width: 768px) {
+            section { padding: 2.5rem 0; }
+            
+            .navbar-brand img { height: 50px; }
+            
+            .hero-section {
+                text-align: center;
+                padding: 3rem 0;
+            }
+            
+            .hero-section h1 { font-size: 1.8rem; }
+            .hero-section p { font-size: 1rem; }
+            .hero-section img { 
+                margin-top: 2rem; 
+                max-width: 70%; 
+            }
+            
+            .jangan-sampai-section h2,
+            .kenapa-kaffa-section h2,
+            .produk-kursus-section h2 { 
+                font-size: 1.6rem; 
+            }
+            
+            .card { margin-bottom: 1.5rem; }
+        }
+        
+        @media (max-width: 576px) {
+            section { padding: 2rem 0; }
+            
+            .hero-section h1 { font-size: 1.6rem; }
+            .custom-box { padding: 1rem; }
+            .btn { padding: 0.6rem 1.2rem; font-size: 0.9rem; }
+            .hero-section img { max-width: 85%; }
+        }
