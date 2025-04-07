@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kas Masuk-Keluar - Dapur Kaffa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" alt="Dapur Kaffa" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sales.html">Riwayat Penjualan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="cashflow.html">Kas Masuk-Keluar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reports.html">Laporan Keuangan</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5 fade-in">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="mb-0">Kas Masuk-Keluar</h2>
+            <div>
+                <button class="btn btn-primary me-2" data-bs-toggle="modal" data-bs-target="#addIncomeModal">
+                    <i class="bi bi-plus-lg"></i> Tambah Pemasukan
+                </button>
+                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#addExpenseModal">
+                    <i class="bi bi-dash-lg"></i> Tambah Pengeluaran
+                </button>
+            </div>
+        </div>
+
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-hover" id="cashflowTable">
+                        <thead>
+                            <tr>
+                                <th>Tanggal</th>
+                                <th>Jenis</th>
+                                <th>Kategori</th>
+                                <th>Jumlah</th>
+                                <th>Keterangan</th>
+                                <th>Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cashflowData">
+                            <!-- Data akan diisi oleh JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal Tambah Pemasukan -->
+    <div class="modal fade" id="addIncomeModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Tambah Pemasukan</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="addIncomeForm">
+                        <div class="mb-3">
+                            <label for="incomeDate" class="form-label">Tanggal</label>
+                            <input type="date" class="form-control" id="incomeDate" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="incomeCategory" class="form-label">Kategori</label>
+                            <select class="form-select" id="incomeCategory" required>
+                                <option value="">Pilih Kategori</option>
+                                <option value="Penjualan">Penjualan</option>
+                                <option value="Investasi">Investasi</option>
+                                <option value="Lainnya">Lainnya</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="incomeAmount" class="form-label">Jumlah</label>
+                            <input type="number" class="form-control" id="incomeAmount" min="0" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="incomeNotes" class="form-label">Keterangan</label>
+                            <textarea class="form-control" id="incomeNotes" rows="2"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                    <button type="button" class="btn btn-primary" id="saveIncomeBtn">Simpan</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Tambah Pengeluaran -->
+    <div class="modal fade" id="addExpenseModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Tambah Pengeluaran</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="addExpenseForm">
+                        <div class="mb-3">
+                            <label for="expenseDate" class="form-label">Tanggal</label>
+                            <input type="date" class="form-control" id="expenseDate" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="expenseCategory" class="form-label">Kategori</label>
+                            <select class="form-select" id="expenseCategory" required>
+                                <option value="">Pilih Kategori</option>
+                                <option value="Bahan Baku">Bahan Baku</option>
+                                <option value="Operasional">Operasional</option>
+                                <option value="Gaji">Gaji</option>
+                                <option value="Lainnya">Lainnya</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="expenseAmount" class="form-label">Jumlah</label>
+                            <input type="number" class="form-control" id="expenseAmount" min="0" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="expenseNotes" class="form-label">Keterangan</label>
+                            <textarea class="form-control" id="expenseNotes" rows="2"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                    <button type="button" class="btn btn-primary" id="saveExpenseBtn">Simpan</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">&copy; <span id="currentYear"></span> Dapur Kaffa. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/airtable.js"></script>
+    <script src="js/cashflow.js"></script>
+</body>
+</html>
